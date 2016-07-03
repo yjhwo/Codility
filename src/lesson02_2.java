@@ -1,5 +1,7 @@
 
-public class lesson03 {
+// Arrays - OddOccurrencesInArray
+
+public class lesson02_2 {
 
 	public static void main(String[] args) {
 		int[] A = {9,3,9,3,9,7,9};

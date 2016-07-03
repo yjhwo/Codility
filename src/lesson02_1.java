@@ -1,5 +1,7 @@
 
-public class lesson02 {
+// Arrays - CyclicRotation
+
+public class lesson02_1 {
 
 	public static void main(String[] args) {
 		
