@@ -1,0 +1,46 @@
+  public static int solution(int[] A) {
+        
+    	int head = 0;
+    	int tail = 0;
+    	int min = 0;
+    	
+    	for(int n : A){
+    		tail += n;
+    	}
+    	 
+    	min = Math.abs(A[0]*2-tail);
+    	
+    	for(int i=1; i<A.length-1; i++){
+    		head += A[i];
+    		tail -= A[i];    		
+    	
+    		min =  (Math.abs(head-tail) < min ? Math.abs(head-tail) : min);
+    		
+    	}
+    	
+        return min;
+     }
+
+
+public static int solution(int[] A) {
+        
+    	int head = 0;
+    	int tail = 0;
+    	int min = 0;
+    	
+    	for(int n : A){
+    		tail += n;
+    	}
+    	
+    	min = Math.abs( head - tail);
+    	System.out.println("head:"+head+",tail:"+tail+",min:"+min);
+    	
+    	for(int i=0; i<A.length; i++){
+    		head += A[i];
+    		tail -= A[i];    		
+    		
+    		min =  (Math.abs(head-tail) < min ? Math.abs(head-tail) : min);
+    	}
+    	        
+        return min;
+     }
