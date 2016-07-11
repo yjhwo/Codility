@@ -10,7 +10,6 @@ public class lesson03_3 {
 
 	}
 
-	// XOR 
 	public static int solution(int[] A) {
 
 		int len = A.length;
