@@ -2,7 +2,7 @@
 // Time Complexity - TapeEquilibrium
 // Minimize the value |(A[0] + ... + A[P-1]) - (A[P] + ... + A[N-1])|.
 
-// 밑에 오류 잡느라 오래 걸림
+// Fixed the following errors :
 // [-1000, 1000] , got 0 expected 2000
 
 public class lesson03_2 {
@@ -17,14 +17,14 @@ public class lesson03_2 {
     	int tail = 0;
     	int min = 0;
     	
-    	for(int n : A){
+    	for (int n =1; n<A.length; n++) {
     		tail += n;
     	}
-    	
-    	min = Math.abs( head - tail);
+    	head = A[0];
+		min = Math.abs( head - tail);
     	System.out.println("head:"+head+",tail:"+tail+",min:"+min);
     	
-    	for(int i=0; i<A.length; i++){
+    	for(int i=1; i<A.length-1; i++){
     		head += A[i];
     		tail -= A[i];    		
     		
